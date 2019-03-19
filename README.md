@@ -1,2 +1,2 @@
 # SSW-215
-Repo for the SSW 215 final project.
+Kali and Wifi card drivers for use on the Raspberry PIs
