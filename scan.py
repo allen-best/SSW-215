@@ -9,10 +9,14 @@ class WiFiScan:
     def __init__(self, scanned_networks, scanned_devices, file_name, dirc=os.getcwd()):
         """The init method instantiates the list of scanned networks and devices. It also runs the full automation process."""
         os.chdir(dirc)
-            self.scanned_networks = dict() # Format for this dictionary is scanned networks' {BSSID: [name, channel, encryption, time_scanned]}.
-            self.scanned_devices = dict() # Format for this dictionary is potential matches' {BSSID: [station, channel, name, time_scanned]}.
-            self.scan_networks() # This function results in an output .csv file of scanned network information.
-            self.scan_devices() # This function results in an output .csv file of scanned device information.
+            #Format for this dictionary is scanned networks' {BSSID: [name, channel, encryption, time_scanned]}.
+            self.scanned_networks = dict() 
+            #Format for this dictionary is potential matches' {BSSID: [station, channel, name, time_scanned]}.
+            self.scanned_devices = dict() 
+            #This function results in an output .csv file of scanned network information.
+            self.scan_networks() 
+            #This function results in an output .csv file of scanned device information.
+            self.scan_devices() 
         self.clean_up(["output-01.csv"])
 
     def bash(self, command):
