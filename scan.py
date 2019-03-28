@@ -36,7 +36,7 @@ class WiFiScan:
         self.bash("airodump-ng start wlan0mon")
         try:
             self.bash("airodump-ng wlan0 -w output --output-format csv")
-         except KeyboardInterrupt:
+        except KeyboardInterrupt:
 	        self.bash("killall airodump-ng")
 
 
