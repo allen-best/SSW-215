@@ -20,8 +20,9 @@ def scan_networks():
 
 """Populate these variables with the properties of the specific network you want to examine. We will eventually automate this process 
 to parse through every network detected by scan_networks(). For that we must consider A)The FOR logic itself and B)Output file naming."""
-channel = channel
-bssid = bssid
+name = network_name
+channel = network_channel
+bssid = network_bssid
 device_list = device_list.csv
 
 scan_networks()
