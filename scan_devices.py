@@ -13,7 +13,7 @@ def scan_networks():
     bash("echo Conducting Network Scan on '{}'".format(name))
     time.sleep(3)
     try:
-        bash('gnome-terminal -x sh -c "airodump-ng --channel {} --bssid {} --write {} wlan0mon ; bash"'.format(channel, bssid, device_list))
+        bash('gnome-terminal -x sh -c "airodump-ng --channel {} --bssid {} --write {} wlan0mon ; bash"'.format(channel, bssid, device_scan_output))
     except KeyboardInterrupt:
         bash("killall airodump-ng")
 
@@ -23,6 +23,6 @@ to parse through every network detected by scan_networks(). For that we must con
 name = network_name
 channel = network_channel
 bssid = network_bssid
-device_list = device_list.csv
+device_scan_output = device_list.csv
 
-scan_networks()
+scan_networks(name, channel, bssid, device_scan_output)
