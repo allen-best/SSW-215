@@ -30,3 +30,4 @@ def scan_networks():
 
 scan_networks()
 
+;
