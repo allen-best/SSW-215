@@ -9,13 +9,13 @@ class WiFiScan:
     def __init__(self, scanned_networks, scanned_devices, file_name, dirc=os.getcwd()):
         """The init method instantiates the list of scanned networks and devices. It also runs the full automation process."""
         os.chdir(dirc)
-        #Format for this dictionary is scanned networks' {BSSID: [name, channel, encryption, time_scanned]}.
+        """Format for this dictionary is scanned networks' {BSSID: [first_time_seen, last_time_seen, channel, encryption, name]}."""
         self.scanned_networks = dict() 
-        #Format for this dictionary is potential matches' {BSSID: [station, channel, name, time_scanned]}.
+        """Format for this dictionary is potential matches' {BSSID: [station, channel, name, first_time_seen, last_time_seen]}."""
         self.scanned_devices = dict() 
-        #This function results in an output .csv file of scanned network information.
+        """This function results in an output .csv file of scanned network information."""
         self.scan_networks() 
-        #This function results in an output .csv file of scanned device information.
+        """This function results in an output .csv file of scanned device information."""
         self.scan_devices() 
         self.clean_up(["output-01.csv"])
 
@@ -38,9 +38,6 @@ class WiFiScan:
             self.bash("airodump-ng wlan0 -w output --output-format csv")
         except KeyboardInterrupt:
 	        self.bash("killall airodump-ng")
-
-
-
 
 def main():
     WiFiScan()
