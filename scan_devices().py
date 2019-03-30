@@ -15,7 +15,7 @@ def bash(command, run_time=30, terminate=True):
     subprocess.call("{}".format(command), shell=True)
 
 def scan_devices():
-    """This method scans a single WiFi network and outputs the list of its connected devices as a .csv file to the desktop. 
+    """This function scans a single WiFi network and outputs the list of its connected devices as a .csv file to the desktop. 
     To stop scanning the user must enter the keyboard interrupt."""
     bash("echo Conducting Network Scan on '{}'".format(name))
     time.sleep(3)
