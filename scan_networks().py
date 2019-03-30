@@ -29,5 +29,3 @@ def scan_networks():
         bash("killall airodump-ng")
 
 scan_networks()
-
-;
