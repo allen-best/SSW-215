@@ -2720,20 +2720,20 @@ textarea.required-field{
 .login-form-container textarea{
 	background-color: #eee;
 	border: 1px solid #eee;
-	color: #999;
+	color: #444;
 }
 .login-form-container .form-element:focus{
-	background-color: #444;
+	background-color: #eee;
 	border-color: #444;
-	color: #fff;
+	color: #444;
 }
 .login-form-container .form-element.required-field{
 	border-color: #999;
-	color: #fff;
+	color: #444;
 }
 .login-form-container .form-element.required-field:focus{
 	border-color: #444;
-	color: #fff;
+	color: #444;
 }
 .login-form-container .form-response{
 	color: #999;
@@ -2742,19 +2742,19 @@ textarea.required-field{
 	color: #999;
 }
 .login-form-container :focus::-webkit-input-placeholder{
-	color: #fff;
+	color: #444;
 }
 .login-form-container ::-moz-placeholder{
 	color: #999;
 }
 .login-form-container :focus::-moz-placeholder{
-	color: #fff;
+	color: #444;
 }
 .login-form-container :-ms-input-placeholder{
 	color: #999;
 }
 .login-form-container :focus:-ms-input-placeholder{
-	color: #fff;
+	color: #444;
 }
 
 /* Footer Specific */

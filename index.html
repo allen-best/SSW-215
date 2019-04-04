@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KTKK7L7');</script>
+	<!-- End Google Tag Manager -->
+
 	<meta charset="UTF-8" />
 	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
 	<meta name="twitter:widgets:theme" content="light">
@@ -12,17 +20,11 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/theme-mountain-favicon.ico">
 
 	<!-- Font -->
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7CLato:300,400,700' rel='stylesheet' type='text/css'>
 	
 	<!-- Css -->
 	<link rel="stylesheet" href="css/core.min.css" />
 	<link rel="stylesheet" href="css/skin.css" />
-	<style type="text/css">
-		.center-it{
-			margin: 0 auto;
-			float: none;
-		}
-	</style>
 
 	<!--[if lt IE 9]>
     	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -30,6 +32,11 @@
 
 </head>
 <body class="shop home-page">
+
+	<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTKK7L7"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 
 	<!-- Side Navigation Menu -->
 	<aside class="side-navigation-wrapper enter-right" data-no-scrollbar data-animation="scale-in">
@@ -60,7 +67,7 @@
 									<a href="project.html">Application</a>
 								</li>
 								<li class="current">
-									<a href="index-RAL.html">Client Login</a>
+									<a href="index.html">Client Login</a>
 								</li>
 							</ul>
 						</li>
@@ -108,25 +115,25 @@
 			<div class="content clearfix">
 
 				<!-- Hero Section 5 -->
-				<section id="strategy" class="section-block hero-5 window-height show-media-column-on-mobile">
-					<div class="media-column bkg-grey-ultralight">
+				<section id="strategy" class="section-block hero-5 window-height show-media-column">
+					<!-- <div class="media-column bkg-charcoal">
 						<div class="tm-slider-container content-slider window-height" data-animation="slide" data-nav-arrows="false" data-nav-pagination="false" data-pause-on-hover="false" data-speed="2000" data-auto-advance data-auto-advance-interval="5000" data-progress-bar="false" data-scale-under="0" data-width="722">
 							<ul class="tms-slides">
 								<li class="tms-slide" data-image data-force-fit data-as-bkg-image data-animation="fade">
-									<img data-src="images/team/hero-half.jpg" data-retina src="images/blank.png" alt=""/>
+									<img data-src="images/hero-half.jpg" data-retina src="images/blank.png" alt=""/>
 								</li>
 								<li class="tms-slide" data-image data-force-fit data-as-bkg-image data-animation="fade">
 									<img data-src="images/team/hero-half-2.jpg" data-retina src="images/blank.png" alt=""/>
 								</li>
 							</ul>
 						</div>
-					</div>
+					</div> -->
 					<div class="row">
-						<div class="column width-4 get-div center-it">
+						<div class="column width-4 offset-4 get-div">
 							<div class="hero-content split-hero-content">
 								<div class="hero-content-inner left">
 									<h3>Client Login</h3>
-									<p class="mb-20">Need a client account? <a href="#">Click Here</a></p>
+									<!-- <p class="mb-20">Need a client account? <a href="#">Click Here</a></p> -->
 									<div class="row">
 										<div class="column width-12">
 											<div class="login-form-container">
@@ -151,7 +158,7 @@
 															</div>
 														</div>
 														<div class="column width-12">
-															<input type="submit" value="Login" class="form-submit button rounded large bkg-green bkg-hover-theme color-white color-hover-white">
+															<input type="submit" value="Login" class="form-submit button rounded medium bkg-theme bkg-hover-theme color-white color-hover-white">
 														</div>
 													</div>
 													<input type="text" name="honeypot" class="form-honeypot form-element">
@@ -272,5 +279,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="http://maps.googleapis.com/maps/api/js?v=3"></script>
 	<script src="js/timber.master.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+	<script src="js/authenticate.js"></script>
 </body>
 </html>
