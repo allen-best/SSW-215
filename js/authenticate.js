@@ -9,10 +9,10 @@ var config = {
 };
 firebase.initializeApp(config);
 
-firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-    window.location = "https://accounts.ssw215.com"
-  } else {
-    window.location = "https://login.ssw215.com"
-  }
-})
+// firebase.auth().onAuthStateChanged(function(user) {
+//   if (user) {
+//     window.location = "https://accounts.ssw215.com"
+//   } else {
+//     window.location = "https://login.ssw215.com"
+//   }
+// })
